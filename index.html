@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Interactive Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <h2>Question 1: What is the capital of France?</h2>
+                <label><input type="radio" name="q1" value="paris"> Paris</label><br>
+                <label><input type="radio" name="q1" value="london"> London</label><br>
+                <label><input type="radio" name="q1" value="berlin"> Berlin</label><br>
+                <label><input type="radio" name="q1" value="rome"> Rome</label><br>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="question">
+                <h2>Question 2: Who wrote "Romeo and Juliet"?</h2>
+                <label><input type="radio" name="q2" value="shakespeare"> William Shakespeare</label><br>
+                <label><input type="radio" name="q2" value="dickens"> Charles Dickens</label><br>
+                <label><input type="radio" name="q2" value="twain"> Mark Twain</label><br>
+                <label><input type="radio" name="q2" value="fitzgerald"> F. Scott Fitzgerald</label><br>
+            </div>
+            
+            <!-- Add more questions as needed -->
+
+            <button type="submit">Submit Answers</button>
+        </form>
+
+        <div id="results"></div> <!-- Results container for displaying score -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
